@@ -50,6 +50,8 @@
         <Compile Include="DataStructures\BinaryHeap.cs" />
         <Compile Include="DataStructures\IHeapItem.cs" />
         <Compile Include="MonoBehaviour1.cs" />
+        <Compile Include="PathFinding\AStern.cs" />
+        <Compile Include="PathFinding\Bestagon.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
