@@ -1,11 +1,27 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace IDontWantToDoThisTwice.PathFinding {
-public class Bestagon {
-   public int FCost { get; set; }
-   public int GCost { get; set; }
-   public int HCost { get; set; }
+public class Bestagon: IPathNode<Bestagon> {
 
-   public Bestagon(Vector2 position) { }
+   public IEnumerable<Bestagon> Neighbors { get; set; }
+   public Vector2 WorldPos { get; set; }
+   public double GetCostToNeighbor(Bestagon neighbour)
+   {
+      return 10;
+   }
+
+   public double CalculateHCost(Bestagon target)
+   {
+      return (target.WorldPos - WorldPos).magnitude*10;
+   }
+
+   public double FCost { get; set; }
+   public double GCost { get; set; }
+
+   public Bestagon(Vector2 worldPos)
+   {
+      WorldPos = worldPos;
+   }
 }
 }

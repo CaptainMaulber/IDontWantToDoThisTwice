@@ -1,5 +1,6 @@
 using IDontWantToDoThisTwice.DataStructures;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace Test.DataStructuresTests {
 [TestFixture]
@@ -74,7 +75,7 @@ internal class TestHeapItem : IHeapItem {
    public TestHeapItem(float priority) {
       Priority = priority;
    }
-   public float Priority { get; }
+   public double Priority { get; }
    
 }
 }

@@ -43,15 +43,15 @@
         </Reference>
         <Reference Include="System.Xml" />
         <Reference Include="UnityEngine">
-            <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.23f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+            <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="DataStructures\BinaryHeap.cs" />
         <Compile Include="DataStructures\IHeapItem.cs" />
-        <Compile Include="MonoBehaviour1.cs" />
         <Compile Include="PathFinding\AStern.cs" />
         <Compile Include="PathFinding\Bestagon.cs" />
+        <Compile Include="PathFinding\IPathNode.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
