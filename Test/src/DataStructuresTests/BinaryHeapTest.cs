@@ -1,6 +1,5 @@
 using IDontWantToDoThisTwice.DataStructures;
 using NUnit.Framework;
-using UnityEngine;
 
 namespace Test.DataStructuresTests {
 [TestFixture]

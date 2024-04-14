@@ -41,12 +41,9 @@
         <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
             <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
         </Reference>
-        <Reference Include="UnityEngine">
-          <HintPath>..\..\..\..\..\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
-        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="DataStructuresTests\BinaryHeapTest.cs" />
+        <Compile Include="src\**\*.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
@@ -54,6 +51,10 @@
         <Project>{3027f90b-f6dc-479d-837c-c4fbc33f0d37}</Project>
         <Name>IDontWantToDoThisTwice</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="src\" />
+      <Folder Include="src\Pathfinding\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
